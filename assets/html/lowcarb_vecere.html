@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+ 
+    <head>
+
+        <title>Recepty na Low carb - Večeře</title>
+        
+        <link rel="icon" type="image/x-icon" href="0pics/jidloicon.png">
+        
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="Recepty na Low carb - Večeře">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- knihovna obrázků a písma -->  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="stylesheet" href="../css/style.css"> 
+        
+    </head>
+
+    <body onload="nactiJidla()">
+
+        <header>
+            <a href="../../index.html"><h1>Co uvaříme?</h1></a>
+        </header>    
+
+        <div class="navbar">
+            <button onclick="window.open('./lowcarb.html', '_parent')" id="lowcarb" class="btnLow"></button>
+            <a href="#"></a>
+        <!--   <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a> -->
+        </div>  
+
+        <div class="row">
+            <div class="sidenav" id="sidenav">
+                <div class="seznam">
+                    <h2>&#9776; Seznam jídel</h2>
+                    <input type="text" id="mySearch" onkeyup="SidebarSearch()" placeholder="Najdi jídlo">            
+                </div>
+                <ul id="myMenu">
+                </ul> 
+            </div>
+
+            <div class="obsah">
+                <div class="tlacitka">
+
+                    <!-- GENEROVÁNÍ JÍDLA -->
+                    <div class="generuj">
+                        <button type="button" class="button" id="generuj" onclick="vypisJidloARecept(); schovRecept();" title="Vygeneruje náhodně vybrané jídlo">Generuj jídlo</button>
+                    </div>
+
+                    <!-- TLAČÍTKO NA RESET SEZNAMU -->
+                    <div class="reset">
+                        <button type="button" class="button" id="reset" style="display: none" onclick="location.reload()" >Reset seznamu</button>
+                    </div>
+                </div>
+
+                <h2 id="nazev"></h2><!-- místo vypsání jídla -->
+
+                <div class="obrazek">
+                    <p id="obrazek"></p> <!-- printne obrázek receptu -->
+                </div>
+
+                <div class="hodnoty" style="display: none" id="hodnoty">
+                    <table>
+                        <tr>
+                            <th>&#9889; Energetická hodnota</th>
+                            <th>&#129482; Sacharidy</th>
+                            <th>&#9832; Tuky</th>
+                            <th>&#129370; Bílkoviny</th>
+                        </tr>
+                        <tr>
+                            <td id="energie"></td>
+                            <td id="sacharidy"></td>
+                            <td id="tuky"></td>
+                            <td id="bilkoviny"></td>
+                        </tr>
+                    </table>  
+                
+                    <hr width="100%" size="1" color="black" noshade>
+
+                    <div class="receptLow" id="recept">
+                        <p id="ingredience"></p> <!-- místo vypsání ingrediencí -->
+                        <p id="postup"></p> <!-- místo vypsání receptu -->
+                    </div> 
+                </div>
+            </div>
+        </div>
+            
+        <footer>
+            &copy; 2022 <b><a href="https://mar6wen8.github.io/MarWen">WarWen</a></b>
+            <a style="margin:0" href="mailto:mar6wen8@gmail.com" target="_blank" aria-label="e-mail"><i class="fa fa-envelope"></i></a>
+        </footer>   
+
+        <script type="text/javascript" src="../js/script.js" defer></script>
+        <script type="text/javascript" src="../js/lowcarb_vecere.js" defer></script>      
+
+    </body>
+
+</html>

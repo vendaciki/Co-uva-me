@@ -1,0 +1,608 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #282425;
+    font-family: serif;
+    margin: 0;
+    background-color: #efeeed; 
+    line-height: 1.5;
+}
+
+header {
+    background-image: url(../../0pics/back.jpg);
+    background-size: cover;
+    font-style: italic;
+    margin: 0;
+}
+
+header::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+}
+
+header h1 {
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+header a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center; 
+    margin: 10px auto 20px;
+    cursor: default;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+} 
+
+.navbarLow {
+    background-color: #333;
+    justify-content: center;
+}
+
+.stranky {
+    display: flex;
+    margin-right: 31% ;
+}
+
+.uzitecne {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 5px 0;
+} 
+
+.uzitecne h2 {
+    display: flex;
+    margin: auto 20px;
+    color: white;
+    left: 100px;
+}
+
+/* užitečné tlař+čítka */
+.kal-tab, .baz-met, .jidelnicek, .pastee {
+    margin: 0 10px 0;
+    width: 120px;
+    height: 47px; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+}  
+
+/* tlačítko na kalorické tabulky  */
+.kal-tab {
+    background-image: url(../../0pics/kal-tab.jpg);
+}
+
+/* tlačítko na bazální metabolusmus  */
+.baz-met {
+    background-image: url(../../0pics/biz-met.jpg);
+}    
+
+/* tlačítko na jídelníček  */
+.jidelnicek {
+    background-image: url(../../0pics/jidelnicek.jpg);
+} 
+
+/* tlačítko na jídelníček  */
+.pastee {
+    background-image: url(../../0pics/pastee.jpg);
+} 
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid black;
+    box-shadow: 15px 0 #333;
+    border-radius: 0 50px 50px 0;
+    padding-top: 10px;
+    flex: 30%;
+    margin-right: 20px;
+    background: linear-gradient(90deg, #e5b68d, #f4e9e0);
+} 
+
+.side h2, .vyber h2 {
+    flex: 100%;
+}
+
+.side h2::after {
+    content: " ";
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto;
+}
+
+h5 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.typJidla {
+    text-align: center;
+    height: 95%;
+}
+
+/* postranní panel */
+.sidenav {
+    display: block;
+    flex: 30%;
+    background-color: rgb(115, 62, 33);
+    opacity: 0.9;   /* průhlednost */ 
+    border-right: 1px solid black;
+    color: white;
+}
+
+.sidenav h2 {
+    margin: 0;
+    padding: 20px; 
+}
+
+.seznam {
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.obsah {
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    margin-bottom: 15px;
+}
+
+.tlacitka {
+    display: flex;
+}
+
+.generuj, .reset {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px auto;
+}
+
+#reset, #generuj {
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #af754c;
+    box-shadow: 5px 5px 8px #888888;
+    left: 65%;
+}
+
+
+/* generuj jídlo */
+button {
+    color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* výpis jídla */
+#nazev {
+    text-align: center;
+    color: black;
+}
+
+#nazev:empty {
+    visibility: hidden; 
+}
+
+/* random obrázky */ 
+.obrazek p {
+    height: 266px;
+    width: 400px; 
+    border: none; 
+    box-shadow: 5px 5px 8px #888888;
+    margin: 0 auto;
+}  
+
+.obrazek p:empty {
+    visibility: hidden; 
+}
+
+/* vyhledávání v sidebaru */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+/* Menu v sidebaru */
+#myMenu {
+    list-style-type: none;  /* zrušení odrážek */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow-y: scroll;
+    max-height: 1000px;
+    width: 100%;
+    background: linear-gradient(140deg, rgb(115, 62, 33), #e5b68d);
+}
+
+#myMenu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Řádky v sidebaru */
+#myMenu li {
+    padding: 8px;
+    width: 100%;
+    font-size: 25px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
+
+#myMenu li:hover {
+    color: black; 
+    background-color: #eee;
+    cursor: pointer;
+}  
+
+/* výběr druhu jídla - maso, nemaso, nápoje,... */
+.vyber {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 65%;
+    background-color: #efeeed;
+    padding: 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.vyberjidlo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.popisek {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 20px;
+    color: black;
+    position: absolute;
+    top: 20px;
+    margin: auto;
+}
+
+.foto {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 10px 8px #888888;
+    margin: 10px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.foto:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.foto a {
+    text-decoration: none;
+}
+
+.foto img {
+    background-size: cover;
+    width: 220px;
+    height: 110px;
+    cursor: pointer; 
+    transition: 0.6s;
+    vertical-align: middle;
+}
+
+.recept {
+    justify-content: center;
+}
+
+.recept p {
+    display: inline-block;
+    margin: 10px auto;
+    vertical-align: top; 
+} 
+
+#ingredience, #postup {
+    background: linear-gradient(140deg, #e5b68d, #e9cbb2, #f4e9e0 83%);
+    border-radius: 8px;
+    margin: 20px 10px;
+    overflow: auto;
+    clear: both;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+}
+
+#ingredience {
+    width: 35%;
+}
+
+#postup {
+    width: 55%;
+}
+
+.doporuceni {
+    width: 90%;
+    margin: 0 auto;  
+}
+
+.cukr, .prijem {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    background-color:#eac8ab;
+    border-radius: 8px;
+    border: 2px solid black; 
+    padding: 0 25px;
+    width: 45%;
+    text-align: center;
+    float: left;
+    box-shadow: 5px 10px 8px #888888;
+    cursor: default;
+}
+
+/* tabulka pro hodnoty */
+table {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.hodnoty {
+    flex-wrap: wrap;
+    width: 98%;
+    margin: 10px auto;
+    background-color:#eac8ab;
+    border-radius: 8px;
+    border: 2px solid black; 
+    padding: 0 25px;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+/* tlačítko na LowCarb zpět */
+.btnLow {
+    cursor: pointer;
+    width: 185px;
+    height: 50px;
+    margin: 5px 50px; 
+}
+
+#lowcarb {
+    background-image: url(0pics/lowcarb.jpg);
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-position: left center; 
+}
+
+.receptLow {
+    margin: 0;
+    overflow: auto;
+    clear: both;
+}
+
+.receptLow p {
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+} 
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    font-size: 15px; 
+    cursor: default;
+}
+
+footer a {
+    color: #00BCD4;    
+    margin: 0 20px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #af754c;
+}
+
+
+
+
+
+
+
+/* TABLET */
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+    header h1 {
+        font-size: 90px;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+    }
+
+    .side {
+        border-bottom: 2px solid #333;
+        border-right: none;
+    }
+
+    .side h2::after {
+        width: 30%;
+    }
+
+    .sidenav {
+        flex: 40%;
+    }
+
+    #reset, #generuj {
+        left: 65%;
+    }
+
+    .recept {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #ingredience, #postup {
+        margin: 20px;
+        width: 100%;
+    }
+
+    #myMenu li {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* MOBIL */
+@media screen and (max-width: 500px) {
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    .navbar {
+        display: none; /* skryje navbar */
+    }
+
+    .vyber h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .side {
+        border-bottom: 2px solid #333;
+        border-right: none;
+        text-align: center;
+    }
+
+    #myMenu li {
+        font-size: 20px;
+    }
+
+    #reset, #generuj {
+        left: 50%;
+    }
+
+    .recept {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #ingredience, #postup {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .tlacitka, .obrazek img {
+        width: 100%;
+    }
+
+    .obrazek p {
+        height: 100%;
+        width: 100%; 
+    }
+
+    /* Menu v sidebaru */
+    #myMenu {
+        max-height: 200px;
+    }
+
+    #mySearch {
+        margin-bottom: 30px;
+    }
+
+    .sidenav h2 {
+        padding: 10px;
+    }
+
+    .cukr, .prijem {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .stranky {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .uzitecne {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .popisek {
+        font-size: 30px;
+    }
+
+    footer {
+     padding: 5px 0;
+    }
+
+}
+
