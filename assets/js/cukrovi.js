@@ -7,7 +7,7 @@ function vypisJidloARecept() {
     pocet_v_seznamu = cukrovi.length;
     if (cukrovi.length == 0) { 
         document.getElementById("nazev").innerHTML = "už tady nic dalšího není 😮";
-        document.getElementById("obrazek").innerHTML = "<img src='../../0pics/prazdny-talir.jpg'>";
+        document.getElementById("obrazek").innerHTML = "<img src='../../0pics/prazdny-talir.webp'>";
         // document.getElementById("ukaz-rcp").style.display = "none";       // skryje tlačítko - ukaž recept
         document.getElementById("reset").style.display = "inherit";    // aktivuje skryté tlačítko - reset jídla
         document.getElementById("recept").style.display = "none";       // skryje obsah tabulky s receptem
