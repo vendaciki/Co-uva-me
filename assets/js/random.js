@@ -228,6 +228,8 @@ const htmlObsah = `
         <h3>${nahodneJidlo.nazev}</h3>
         <div>${nahodneJidlo.obrazek}</div>
     </div>
+    
+
     `; 
     //<p>${nahodneJidlo.ingredience}</p>
     //<p>${nahodneJidlo.postup}</p>

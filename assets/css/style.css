@@ -129,7 +129,7 @@ h2 {
     border-right: 2px solid #333;
     border-bottom: 2px solid black;
     box-shadow: 15px 0 #333;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 0 0;
     padding-top: 10px;
     flex: 30%;
     margin-right: 20px;
@@ -247,7 +247,7 @@ button {
     font-size: 18px;
     padding: 11px;
     border: 1px solid black;
-    margin-bottom: 50px;
+    border-right: none;
 }
 
 /* Menu v sidebaru */
@@ -413,7 +413,7 @@ table {
 }
 
 #lowcarb {
-    background-image: url(0pics/lowcarb.webp);
+    background-image: url(../../0pics/lowcarb.webp);
     background-repeat: no-repeat;
     background-size: 102%;
     background-position: left center; 
@@ -448,6 +448,14 @@ footer a {
 
 .fa {
     font-size: 20px;
+}
+
+.fa-search {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    border-left: none;
+    color: grey;
 }
 
 footer a:hover {
@@ -538,6 +546,17 @@ footer a:hover {
         border-bottom: 2px solid #333;
         border-right: none;
         text-align: center;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .typJidla img {
+        width: 90%;
+    }
+
+    .typJidla h3 {
+        margin-top: 0;
     }
 
     #myMenu li {
@@ -570,10 +589,6 @@ footer a:hover {
     /* Menu v sidebaru */
     #myMenu {
         max-height: 200px;
-    }
-
-    #mySearch {
-        margin-bottom: 30px;
     }
 
     .sidenav h2 {
