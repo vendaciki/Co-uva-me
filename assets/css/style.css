@@ -95,22 +95,22 @@ h2 {
 
 /* tlačítko na kalorické tabulky  */
 .kal-tab {
-    background-image: url(../../0pics/kal-tab.jpg);
+    background-image: url(../../0pics/kal-tab.webp);
 }
 
 /* tlačítko na bazální metabolusmus  */
 .baz-met {
-    background-image: url(../../0pics/biz-met.jpg);
+    background-image: url(../../0pics/biz-met.webp);
 }    
 
 /* tlačítko na jídelníček  */
 .jidelnicek {
-    background-image: url(../../0pics/jidelnicek.jpg);
+    background-image: url(../../0pics/jidelnicek.webp);
 } 
 
 /* tlačítko na jídelníček  */
 .pastee {
-    background-image: url(../../0pics/pastee.jpg);
+    background-image: url(../../0pics/pastee.webp);
 } 
 
 /* Column container */
@@ -413,7 +413,7 @@ table {
 }
 
 #lowcarb {
-    background-image: url(0pics/lowcarb.jpg);
+    background-image: url(0pics/lowcarb.webp);
     background-repeat: no-repeat;
     background-size: 102%;
     background-position: left center; 
