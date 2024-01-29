@@ -8,6 +8,9 @@ body {
     margin: 0;
     background-color: #efeeed; 
     line-height: 1.5;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
 }
 
 header {
@@ -120,6 +123,7 @@ h2 {
     width: 100%;
     justify-content: center;
     margin: 0 auto;
+    flex: 1;
 }
 
 .side {
@@ -291,6 +295,7 @@ button {
     padding: 20px;
     overflow: auto;
     text-align: center;
+    margin-bottom: auto;
 }
 
 .vyberjidlo {
