@@ -1,14 +1,11 @@
 ﻿
 function vypisJidloARecept() {
-    // document.getElementById("recept").style.display = "none";    //  skryje obsah tabulky s receptem
     document.getElementById("reset").style.display = "none";       // skryje tlačítko - reset jídla
-    // document.getElementById("ukaz-rcp").style.display = "inherit";    // aktivuje skryté tlačítko - ukaž recept
     document.getElementById("recept").style.display = "inherit";    // aktivuje skrytý obsah tabulky s receptem
     pocet_v_seznamu = polevky.length;
     if (polevky.length == 0) {
         document.getElementById("nazev").innerHTML = "už tady nic dalšího není 😮";
         document.getElementById("obrazek").innerHTML = "<img src='../../0pics/prazdny-talir.webp'>";
-        // document.getElementById("ukaz-rcp").style.display = "none";       // skryje tlačítko - ukaž recept
         document.getElementById("reset").style.display = "inherit";    // aktivuje skryté tlačítko - reset jídla
         document.getElementById("recept").style.display = "none";       // skryje obsah tabulky s receptem
         document.getElementById("generuj").style.display = "none";       // skryje obsah tabulky s receptem

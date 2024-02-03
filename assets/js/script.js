@@ -14,17 +14,4 @@
     }
 }
 
-/*
-function ukazRecept() {
-    document.getElementById("recept").style.display = "";
-    document.getElementById("ingredience").style.display = "";
-    document.getElementById("postup").style.display = "";  
-    document.getElementById("hodnoty").style.display = "";
-}             
-
-function schovRecept() {
-    document.getElementById("recept").innerHTML = "";
-    document.getElementById("ingredience").innerHTML = "";
-    document.getElementById("postup").innerHTML = "";
-}        */  
 
