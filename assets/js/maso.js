@@ -23,6 +23,9 @@ function vypisJidloARecept() {
 
   /* NAČTENÍ JÍDEL DO SIDEBARU */
 function nactiJidla() {
+    // Seřadíme pole jídel podle názvu
+    maso.sort((a, b) => a.nazev.localeCompare(b.nazev));
+
     // document.getElementById("sidenav").style.width = "250px";
     for (let i = 0; i < maso.length; i++) {
         const x = document.createElement("li");
