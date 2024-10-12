@@ -213,9 +213,8 @@ h5 {
     left: 65%;
 }
 
-
 /* generuj jídlo */
-button {
+button, .generuj a {
     color: white;
     border-radius: 8px;
     border: 2px solid black;

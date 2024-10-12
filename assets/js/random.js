@@ -200,7 +200,15 @@ const random = [
     {nazev: "Lososovo-cuketové pečené nugety", obrazek: "<img src='./lowcarb/Lososovo-cuketove-pecene-nugety.webp'>" },
     {nazev: "Cheeseburger salát", obrazek: "<img src='./lowcarb/Cheeseburger-salat.webp'>" },
     {nazev: "Španělské kuřecí paličky", obrazek: "<img src='./lowcarb/Spanelske-kureci-palicky.webp'>" },
-
+    {nazev: "	Kynuté borůvkové knedlíky	", obrazek: "<img src='nemaso/	boruvkove-knedle	.webp'>" },
+    {nazev: "	Slaný koláč s rajčaty	", obrazek: "<img src='dezerty/	slany-kolac-s-rajcaty	.webp'>" },
+    {nazev: "	Zmrzlinový pohár s horkými malinami	", obrazek: "<img src='speciality/	zmrzlinovy-pohar-maliny	.webp'>" },
+    {nazev: "	T-bone steak v rozmarýnovém oleji	", obrazek: "<img src='maso/	T-steak	.webp'>" },
+    {nazev: "	Limetkové kuře v tequile se smetanovým dipem	", obrazek: "<img src='maso/	Limetkove-kureci-palicky	.webp'>" },
+    {nazev: "	Grilovaná kuřecí křídla s koriandrovým dipem	", obrazek: "<img src='maso/	Grilovana-kridla	.webp'>" },
+    {nazev: "	Kuřecí špízy v marinádě pomodoro	", obrazek: "<img src='maso/	Kureci-spizy	.webp'>" },
+    {nazev: "	Portobello tacos	", obrazek: "<img src='nemaso/	Portobello-tacos	.webp'>" },
+    {nazev: "	Grilované portobello	", obrazek: "<img src='nemaso/	grilovane-portobello	.webp'>" },
 
 
 
