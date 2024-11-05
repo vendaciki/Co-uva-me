@@ -6,7 +6,7 @@ function vypisJidloARecept() {
     pocet_v_seznamu = lowcarb_obed.length;
     if (lowcarb_obed.length == 0) {
         document.getElementById("nazev").innerHTML = "už tady nic dalšího není 😮";
-        document.getElementById("obrazek").innerHTML = "<img src='../../0pics/prazdny-talir.webp'>";
+        document.getElementById("obrazek").innerHTML = "<img src='../../img/0pics/prazdny-talir.webp'>";
         document.getElementById("reset").style.display = "inherit";    // aktivuje skryté tlačítko - reset jídla
         document.getElementById("hodnoty").style.display = "none";       // skryje obsah tabulky s receptem
         document.getElementById("generuj").style.display = "none";       // skryje obsah tabulky s receptem

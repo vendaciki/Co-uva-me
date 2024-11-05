@@ -1,100 +1,736 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
 
     <head>
 
         <title>Co uvaříme? | 100+ nejlepší recepty</title>
 
-        <link rel="icon" type="image/x-icon" href="0pics/jidloicon.png">
-        
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="description" content="Co uvaříme?">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- knihovna obrázků a písma -->  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
 
-        <link rel="stylesheet" href="./assets/css/style.css">   
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Fce navbar toggler -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Template Stylesheet -->
+        <link href="assets/css/style.css" rel="stylesheet">
 
     </head>
 
     <body>
+        <div class="bg-white p-0">
+            <div class="relative p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="index.html" class="flex items-center navbar-brand p-0">
+                        <img class="mr-2" src="img/jidloicon.png" alt="Logo">
+                        <h2 class="text-primary m-0">Co uvaříme?</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0 pr-6">
+                            <a href="assets/html/about.html" class="nav-item nav-link">O nás</a>
+                            <!-- <a href="assets/html/service.html" class="nav-item nav-link">Service</a>
+                            <a href="assets/html/menu.html" class="nav-item nav-link">Menu</a>
+                            <a href="assets/html/contact.html" class="nav-item nav-link">Contact</a> -->
+                        </div>
+                    </div>
+                </nav>
 
-        <header style="cursor: default">
-            <h1>Co uvaříme?</h1>
-        </header>  
-
-        <div class="row">
-            <div class="side">
-            </div> 
-
-            <div class="vyber">
-                <h2>Stále ta samá otázka? „Co budeme vařit?“<br>
-                Máme pro Vás malé řešení. Stačí si vybrat druh jídla.</h2>
-                
-                <div class="vyberjidlo">
-                    <div class="foto">
-                        <a href="./assets/html/maso.html"> <img src="0pics/maso.webp" alt="jídla s masem">
-                        <p class="popisek">Maso</p> 
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/nemaso.html"> <img src="0pics/nemaso.webp" alt="jídla bez masa"> 
-                        <p class="popisek">Bez masa</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/polevky.html"> <img src="0pics/polevka.webp" alt="polévka">
-                        <p class="popisek">Polévka</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/dezerty.html"> <img src="0pics/dezert.webp" alt="dezert"> 
-                        <p class="popisek">Dezert</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/speciality.html"> <img src="0pics/speciality.webp" alt="speciality"> 
-                        <p class="popisek">Speciality</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/vecere.html"> <img src="0pics/vecere.webp" alt="večeře"> 
-                        <p class="popisek">Večeře</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/napoje.html"> <img src="0pics/napoje.webp" alt="nápoje"> 
-                        <p class="popisek">Nápoje</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/zavarovani.html"> <img src="0pics/zavarovani.webp" alt="zavařování">
-                        <p class="popisek">Zavařování</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/cukrovi.html"> <img src="0pics/cukrovi.webp" alt="cukroví"> 
-                        <p class="popisek">Cukroví</p>
-                        </a>
-                    </div>
-                    <div class="foto">
-                        <a href="./assets/html/lowcarb.html"> <img src="0pics/lowcarb.webp" alt="lowcarb"> 
-                        <p class="popisek">LowCarb</p>
-                        </a>
+                <div class="py-5 bg-dark hero-header">
+                    <div class="container mt-5 py-14 sm:py-0">
+                        <div class="row items-center justify-center g-5">
+                            <div class="col-lg-6 sm:mt-0 text-center text-lg-start">
+                                <h1 class="display-3 text-white animated slideInLeft">Vítejte<br>na našich stránkách</h1>
+                                <h3 class="text-white animated slideInLeft mb-6 pb-2">Stále ta samá otázka? „Co budeme vařit?“<br>
+                                    Máme pro Vás malé řešení. Stačí si vybrat druh jídla.</h3>
+                            </div>
+                            <div class="col-lg-6 flex justify-center text-center text-lg-end overflow-hidden">
+                                <img class="img-fluid" src="img/0pics/hero.webp" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Menu Start -->
+            <div class="container-xxl after py-5">
+                <div class="container">
+                    <div class="text-center wow fadeInUp side" data-wow-delay="0.1s">
+                        <!-- generuje JS -->
+                    </div>
+                </div>
+            </div>
+            <!-- Menu End -->
+
+            <div class="container-xxl py-5">
+                
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="section-title ff-secondary text-center text-primary fw-normal">Výběr z jídel</h3>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/maso.html">
+                                <div class="service-item rounded maso">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-drumstick-bite text-primary mb-6"></i>
+                                        <h4>Masová jídla</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/nemaso.html">
+                                <div class="service-item rounded nemaso">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-carrot text-primary mb-6"></i>
+                                        <h4>Jídla bez masa</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/polevky.html">
+                                <div class="service-item rounded polevky">
+                                    <div class="p-6">
+                                        <i class="fas fa-3x fa-bowl-food text-primary mb-6"></i>
+                                        <h4>Polévky</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/dezerty.html">
+                                <div class="service-item rounded dezerty">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-cheese text-primary mb-6"></i>
+                                        <h4>Dezerty</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/speciality.html">
+                                <div class="service-item rounded speciality">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-ice-cream text-primary mb-6"></i>
+                                        <h4>Speciality</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/vecere.html">
+                                <div class="service-item rounded vecere">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-pizza-slice text-primary mb-6"></i>
+                                        <h4>Večeře</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/napoje.html">
+                                <div class="service-item rounded napoje">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-martini-glass text-primary mb-6"></i>
+                                        <h4>Nápoje</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/zavarovani.html">
+                                <div class="service-item rounded zavarovani">
+                                    <div class="p-6">
+                                        <i class="fas fa-3x fa-jar-wheat text-primary mb-6"></i>
+                                        <h4>Zavařování</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/cukrovi.html">
+                                <div class="service-item rounded cukrovi">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-cookie text-primary mb-6"></i>
+                                        <h4>Cukroví</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                            <a href="assets/html/lowcarb.html">
+                                <div class="service-item rounded lowcarb">
+                                    <div class="p-6">
+                                        <i class="fa fa-3x fa-egg text-primary mb-6"></i>
+                                        <h4>Low-Carb</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- About Start -->
+            <!-- <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-5 items-center">
+                        <div class="col-lg-6">
+                            <div class="row g-3">
+                                <div class="col-6 text-start">
+                                    <img class="img-fluid rounded w-full wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                                </div>
+                                <div class="col-6 text-start">
+                                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                                </div>
+                                <div class="col-6 text-end">
+                                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                                </div>
+                                <div class="col-6 text-end">
+                                    <img class="img-fluid rounded w-full wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="section-title ff-secondary text-start text-primary fw-normal">O nás</h5>
+                            <h1 class="mb-6">Vítejte na <i class="fa fa-utensils text-primary me-2"></i>Co uvaříme?</h1>
+                            <p class="mb-6">Naším cílem je Vám zjednodušit nápady k výběru jídla</p>
+                            <p class="mb-6">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                            <div class="row g-4 mb-6">
+                                <div class="col-sm-6">
+                                    <div class="d-flex items-center border-start border-5 border-primary px-3">
+                                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">234</h1>
+                                        <div class="ps-4">
+                                            <h6 class="text-uppercase mb-0">Receptů</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex items-center border-start border-5 border-primary px-3">
+                                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                        <div class="ps-4">
+                                            <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- About End -->
+
+
+            <!-- Menu Start -->
+            <!-- <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                        <h1 class="mb-12">Most Popular Items</h1>
+                    </div>
+                    <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-center border-bottom mb-12">
+                            <li class="nav-item">
+                                <a class="d-flex items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                    <i class="fa fa-coffee fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <small class="text-body">Popular</small>
+                                        <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                    <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <small class="text-body">Special</small>
+                                        <h6 class="mt-n1 mb-0">Launch</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                    <div class="ps-3">
+                                        <small class="text-body">Lovely</small>
+                                        <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                            <div class="w-full d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Burger</span>
+                                                    <span class="text-primary">$115</span>
+                                                </h5>
+                                                <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Menu End -->
+
+            <!-- Testimonial Start -->
+            <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="text-center">
+                        <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                        <h1 class="mb-12">Our Clients Say!!!</h1>
+                    </div>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item bg-transparent border rounded p-4">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-4"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-transparent border rounded p-4">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-4"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-transparent border rounded p-4">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-4"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-transparent border rounded p-4">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-4"></i>
+                            <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            <div class="d-flex items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Client Name</h5>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Testimonial End -->
+            
+
+            <!-- Footer Start -->
+            <div class="container-fluid bg-dark text-light footer mt-14 wow fadeIn" data-wow-delay="0.1s">
+                <!-- <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-6">Company</h4>
+                            <a class="btn btn-link" href="">About Us</a>
+                            <a class="btn btn-link" href="">Contact Us</a>
+                            <a class="btn btn-link" href="">Reservation</a>
+                            <a class="btn btn-link" href="">Privacy Policy</a>
+                            <a class="btn btn-link" href="">Terms & Condition</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-6">Contact</h4>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-6">Opening</h4>
+                            <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                            <p>09AM - 09PM</p>
+                            <h5 class="text-light fw-normal">Sunday</h5>
+                            <p>10AM - 08PM</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-6">Newsletter</h4>
+                            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                            <div class="relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control border-primary w-full py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                                &copy; 2024 <a class="border-bottom" href="https://mar6wen8.github.io/MarWen/" target="_blank">MarWen</a>, Všechna práva vyhrazena. 
+                            </div>
+                            <!-- <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <a href="">Home</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Help</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
         </div>
 
-        <footer>
-            &copy; 2022 <b><a href="https://mar6wen8.github.io/MarWen" target="_blank" >WarWen</a></b>
-            <a style="margin:0" href="mailto:mar6wen8@gmail.com" target="_blank" aria-label="e-mail"><i class="fa fa-envelope"></i></a>
-        </footer>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
 
-        <script type="text/javascript" src="./assets/js/script.js"></script>  
-        <script type="text/javascript" src="./assets/js/random.js"></script> 
+        <!-- Template Javascript -->
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/random.js"></script>
+
 
     </body>
-    
+
 </html>

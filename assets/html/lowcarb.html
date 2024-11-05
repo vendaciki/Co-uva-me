@@ -1,92 +1,181 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
- 
+
     <head>
-
-        <title>Recepty na Low carb</title>
-
-        <link rel="icon" type="image/x-icon" href="../../0pics/jidloicon.png">
         
+        <title>Co uvaříme? - Masová jídla</title>
+
         <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="description" content="Recepty na Low carb">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- knihovna obrázků a písma -->  
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../../img/logo.png">
 
-        <link rel="stylesheet" href="../css/style.css"> 
-        
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Fce navbar toggler -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+        <!-- Template Stylesheet -->
+        <link href="../css/style.css" rel="stylesheet">
+
     </head>
 
-    <body>
-    
-        <header>
-            <a href="../../index.html"><h1>Co uvaříme?</h1></a>
-        </header>   
-                
-        <div class="navbarLow">
-            <div class="uzitecne">
-                <h2>Užitečné stránky</h2>
-                <div class="stranky">
-                    <button onclick="window.open('http://www.kaloricketabulky.cz', '_blank')" class="kal-tab" ></button> 
-                    <button onclick="window.open('http://www.michaljoseftoth.cz/kalkulacka', '_blank')" class="baz-met" ></button>
-                    <button onclick="window.open('https://www.pastee.cz', '_blank')" class="pastee" ></button>
-                    <button onclick="window.open('./jidelnicek.html', '_blank')" class="jidelnicek" ></button>
+    <body onload="nactiJidla()">
+
+        <div class="bg-white p-0">
+            <div class="relative z-10 p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                    <a href="../../index.html" class="flex items-center navbar-brand p-0">
+                        <img class="mr-2" src="../../img/jidloicon.png" alt="Logo">
+                        <h2 class="text-primary m-0">Co uvaříme?</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0 pr-6">
+                            <a href="assets/html/about.html" class="nav-item nav-link">O nás</a>
+                            <!-- <a href="assets/html/service.html" class="nav-item nav-link">Service</a>
+                            <a href="assets/html/menu.html" class="nav-item nav-link">Menu</a>
+                            <a href="assets/html/contact.html" class="nav-item nav-link">Contact</a> -->
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="py-5 bg-dark hero-header">
+                    <div class="container flex justify-center items-center mt-12 pt-8 md:mt-0 md:pt-0">
+                        <i class="fa fa-3x fa-egg text-primary mb-4 mr-5"></i>
+                        <h1 class="display-3 text-white mb-4 animated slideInDown">Low-Carb dieta</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="vyber">
-                <h2>V této dietě už je to o trošku víc náročnější.<br>
-                Třeba Vás překvapíme lahodnýmy recepty.</h2>
+            <div class="navbarLow">
+                <div class="uzitecne">
+                    <h3>Užitečné stránky</h3>
+                    <div class="stranky">
+                        <a href="http://www.kaloricketabulky.cz" target="_blank" class="kal-tab" ></a> 
+                        <a href="http://www.michaljoseftoth.cz/kalkulacka" target="_blank" class="baz-met" ></a>
+                        <a href="https://www.pastee.cz" target="_blank" class="pastee" ></a>
+                        <a href="./jidelnicek.html" target="_blank" class="jidelnicek" ></a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="vyberjidlo">
-                    <div class="foto">
-                        <a href="./lowcarb_snidane.html"> <img src="../../0pics/snidane.webp" alt="snidane">
-                        <p class="popisek">Snídaně</p>
+            <section class="container-xxl flex-wrap g-0">
+                <div class="flex flex-wrap justify-center w-full row g-4 mt-14">
+                    <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                        <a href="./lowcarb_snidane.html"> 
+                            <div class="service-item rounded low-snidane">
+                                <div class="p-6">
+                                    <i class="fa fa-3x fa-mug-saucer text-primary mb-6"></i>
+                                    <h4>Snídaně</h4>
+                                </div>
+                            </div>
                         </a>
                     </div>
-                    <div class="foto">   
-                        <a href="./lowcarb_obed.html"> <img src="../../0pics/obed.webp" alt="obed">
-                        <p class="popisek">Oběd</p>
+                    <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">  
+                        <a href="./lowcarb_obed.html"> 
+                            <div class="service-item rounded low-obed">
+                                <div class="p-6">
+                                    <i class="fa fa-3x fa-utensils text-primary mb-6"></i>
+                                    <h4>Oběd</h4>
+                                </div>
+                            </div>
                         </a>
                     </div> 
-                    <div class="foto">
-                        <a href="./lowcarb_vecere.html"> <img src="../../0pics/vecere1.webp" alt="vecere">
-                        <p class="popisek">Večeře</p>
+                    <div class="col-lg-3 col-sm-6 mt-3 wow fadeInUp overflow-hidden sm:w-full">
+                        <a href="./lowcarb_vecere.html"> 
+                            <div class="service-item rounded low-vecere">
+                                <div class="p-6">
+                                    <i class="fa fa-3x fa-carrot text-primary mb-6"></i>
+                                    <h4>Večeře</h4>
+                                </div>
+                            </div>
                         </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-14">
+                    <h3 class="section-title ff-secondary text-center text-primary fw-normal">Pár rad</h3>
+                </div>
+
+                <div class="grid grid-cols-2 ">
+                    <div class="cukr"> 
+                        <h2 class="mb-6">🧊 Sladit nebo nesladit?</h2>
+                        <p>A když už sladit, tak čím? Celkem časté a zásadní otázky.<br>
+                        Nicméně na ně neexistuje jednoznačná odpověď.<br>
+                        Každý máme chuť posazenou někde jinde, máme jiné cíle, zdravotní omezení i stravovací zásady.<br>
+                        Ti, kteří si hlídají nízký příjem sacharidů, nejspíš sáhnou po erythritolu, xylitolu, čekankovém sirupu či stévii, nebo sladidlo zcela vynechají.<br>
+                        Jiní raději občas zvolí med či datle, i když nemají nízký obsah sacharidů, ale celkové použité množství výrazně poníží.<br>
+                        Proto v receptech přesně neuvádím, jakou variantu oslazení (zejména v dezertech) máte použít a i samotné množství berte jen orientačně.<br>
+                        To záleží na vás a vašich stravovacích pravidlech.<br>
+                        Výživové hodnoty takových receptů jsou rozpočítány pro použití erythritolu s nulovou kalorickou hodnotou či při úplném vynechání sladidla.</p>
+                    </div>
+    
+                    <div class="prijem">
+                        <h2 class="mb-6">Jak zjistíme potřebný kalorický příjem</h2>
+                        <p>Odrazíme se od určení optimální energetické spotřeby, tzv. bazálního metabolického výdeje (BMR - basal metabolic rate). Výše BMR je přibližné množství energie, které tělo potřebuje, i když se ani nepohne. Tohle průměrné denní minimum prostě tělo přijmout musí. Pak již stačí výsledek navýšit o denní aktivity a je to.<br>Kalkulačku najdete nahoře v nabídce.</p>
+                    </div>
+                </div>
+
+            </section>
+         
+            <!-- Footer Start -->
+            <div class="container-fluid relative bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                                &copy; 2024 <a class="border-bottom" href="https://mar6wen8.github.io/MarWen/" target="_blank">MarWen</a>, Všechna práva vyhrazena. 
+                            </div>
+                            <!-- <div class="col-md-6 text-center text-md-end">
+                                <div class="footer-menu">
+                                    <a href="">Home</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Help</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="doporuceni">
-                <div class="cukr"> 
-                    <h2>🧊 <u> Sladit nebo nesladit?</u></h2>
-                    <p>A když už sladit, tak čím? Celkem časté a zásadní otázky.<br>
-                    Nicméně na ně neexistuje jednoznačná odpověď.<br>
-                    Každý máme chuť posazenou někde jinde, máme jiné cíle, zdravotní omezení i stravovací zásady.<br>
-                    Ti, kteří si hlídají nízký příjem sacharidů, nejspíš sáhnou po erythritolu, xylitolu, čekankovém sirupu či stévii, nebo sladidlo zcela vynechají.<br>
-                    Jiní raději občas zvolí med či datle, i když nemají nízký obsah sacharidů, ale celkové použité množství výrazně poníží.<br>
-                    Proto v receptech přesně neuvádím, jakou variantu oslazení (zejména v dezertech) máte použít a i samotné množství berte jen orientačně.<br>
-                    To záleží na vás a vašich stravovacích pravidlech.<br>
-                    Výživové hodnoty takových receptů jsou rozpočítány pro použití erythritolu s nulovou kalorickou hodnotou či při úplném vynechání sladidla.</p>
-                </div>
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-                <div class="prijem">
-                    <h2><u>Jak zjistíme potřebný kalorický příjem</u></h2>
-                    <p>Odrazíme se od určení optimální energetické spotřeby, tzv. bazálního metabolického výdeje (BMR - basal metabolic rate). Výše BMR je přibližné množství energie, které tělo potřebuje, i když se ani nepohne. Tohle průměrné denní minimum prostě tělo přijmout musí. Pak již stačí výsledek navýšit o denní aktivity a je to.<br>Kalkulačku najdete nahoře v nabídce.</p>
-                </div>
-            </div>
         </div>
 
-        <footer>
-            &copy; 2022 <b><a href="https://mar6wen8.github.io/MarWen" target="_blank" >WarWen</a></b>
-            <a style="margin:0" href="mailto:mar6wen8@gmail.com" target="_blank" aria-label="e-mail"><i class="fa fa-envelope"></i></a>
-        </footer>
-            
-        <script type="text/javascript" src="../js/script.js" defer></script>
-        <script type="text/javascript" src="../js/lowcarb.js" defer></script>    
+        <!-- JavaScript Libraries -->        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="../js/script.js"></script>
+        <script src="../js/lowcarb.js"></script>
 
     </body>
 
