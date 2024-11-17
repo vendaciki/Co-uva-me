@@ -2,6 +2,17 @@ const random = [
 
 
   
+
+  {nazev: "Meruňková bublanina", obrazek: "<img src='img/dezerty/merunkova-bublanina.webp'>" },
+  {nazev: "Třešňová bublanina", obrazek: "<img src='img/dezerty/tresnova-bublanina.webp'>" },
+  {nazev: "Borůvková bublanina", obrazek: "<img src='img/dezerty/boruvkova-bublanina.webp'>" },
+  {nazev: "Dort s kokosovým krémem", obrazek: "<img src='img/dezerty/Dort-s-kokosovym-kremem.webp'>" },
+  {nazev: "Nepečený borůvkový dort", obrazek: "<img src='img/dezerty/Nepeceny-boruvkovy-dort.webp'>" },
+  {nazev: "Sušenkový chlebíček", obrazek: "<img src='img/dezerty/Susenkovy-chlebicek-s-boruvkami.webp'>" },
+  {nazev: "Kynutý chlebíček", obrazek: "<img src='img/dezerty/kynuty-chlebicek-s-boruvkami.webp'>" },
+  {nazev: "Mini bábovky s lesním ovocem", obrazek: "<img src='img/dezerty/Mini-babovky-s-lesnim-ovocem.webp'>" },
+  {nazev: "Dračí koláč pro děti", obrazek: "<img src='img/dezerty/draci-kolac-pro-deti.webp'>" },
+  {nazev: "Banánky s krémem", obrazek: "<img src='img/dezerty/bananky-s-kremem.webp'>" },
   {nazev: "Brambory plněné mletým masem", obrazek: "<img src='img/maso/Brambory-plnene-mletym-masem.webp'>" },
   {nazev: "Buci", obrazek: "<img src='img/maso/Buci.webp'>" },
   {nazev: "Buřtguláš", obrazek: "<img src='img/maso/Burtgulas.webp'>" },
