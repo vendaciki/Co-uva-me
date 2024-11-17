@@ -1309,6 +1309,10 @@ button, .generuj a {
     margin-right: 1.25rem; /* 20px */
 }	
 
+.ml-4 {
+    margin-left: 1rem; /* 16px */
+}	
+
 .mb-4 {
     margin-bottom: 1rem; /* 16px */
 }	

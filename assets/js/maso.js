@@ -1,4 +1,4 @@
-﻿const maso = [
+﻿window.maso = [
 
 
 

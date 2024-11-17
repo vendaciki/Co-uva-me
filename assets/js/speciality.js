@@ -1,4 +1,4 @@
-﻿const speciality = [
+﻿window.speciality = [
 
 
 

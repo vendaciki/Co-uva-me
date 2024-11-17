@@ -7,8 +7,10 @@
 
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="recepty, vaření, jídlo, inspirace na vaření, kuchařka online, jednoduché recepty, domácí vaření, české recepty, speciality, dezerty, zdravé vaření" name="keywords">
+        <meta content="Objevte snadné a chutné recepty na našem webu Co uvaříme? Inspirujte se nápady na snídaně, obědy, večeře, dezerty i speciality. Každý den nové recepty!" name="description">
+
+        <meta name="author" content="MarWen">
 
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../../img/logo.png">
@@ -48,7 +50,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav ms-auto py-0 pr-6">
-                            <a href="assets/html/about.html" class="nav-item nav-link">O nás</a>
+                            <a href="assets/html/about.html" class="nav-item nav-link"><i class="fa-regular fa-user mr-2"></i>O nás</a>
                             <!-- <a href="assets/html/service.html" class="nav-item nav-link">Service</a>
                             <a href="assets/html/menu.html" class="nav-item nav-link">Menu</a>
                             <a href="assets/html/contact.html" class="nav-item nav-link">Contact</a> -->
@@ -77,24 +79,52 @@
                     <div class="col-lg-6">
                         <h1 class="mb-6">Vítejte na <br><img class="mr-2" src="../../img/jidloicon.png" alt="Logo" style="width: 60px;">Co uvaříme?</h1>
                         <p class="mb-6">Naším cílem je Vám zjednodušit nápady k výběru jídla</p>
-                        <p class="mb-6">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="mb-6">Jsme váš spolehlivý průvodce ve světě kulinářského umění. Na našich stránkách najdete recepty pro každou příležitost – od jednoduchých jídel pro všední dny až po sofistikované speciality na slavnostní tabuli. Inspirujte se a objevte nové chutě!</p>
                         <div class="row g-4 mb-6">
-                            <div class="col-sm-6">
-                                <div class="d-flex items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0 mr-5" data-toggle="counter-up">234</h1>
+                            <div class="">
+                                <h3>Aktuálně vám přinášíme</h3>
+                                <div class="d-flex items-center border-start border-5 border-primary px-3 ml-4">
+                                    <h1 id="recipe-count" class="flex-shrink-0 display-5 text-primary mb-0 mr-5" data-toggle="counter-up">0</h1>
                                     <div class="ps-4">
-                                        <h4 class="text-uppercase mb-0">Receptů</h4>
+                                        <h2 class="text-uppercase mb-0">Receptů</h2>
                                     </div>
                                 </div>
+                                <h3>které jen čekají, až je vyzkoušíte. <br>
+                                    Tak pojďme na to – co si dnes uvaříme?
+                                </h3>
                             </div>
-                            <!-- <div class="col-sm-6">
-                                <div class="d-flex items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
-                                    <div class="ps-4">
-                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
-                                    </div>
-                                </div>
-                            </div> -->
+                        
+                            <script src="../js/maso.js"></script>
+                            <script src="../js/nemaso.js"></script>
+                            <script src="../js/cukrovi.js"></script>
+                            <script src="../js/dezerty.js"></script>
+                            <script src="../js/napoje.js"></script>
+                            <script src="../js/polevky.js"></script>
+                            <script src="../js/speciality.js"></script>
+                            <script src="../js/vecere.js"></script>
+                            <script src="../js/zavarovani.js"></script>
+                            <script src="../js/lowcarb_obed.js"></script>
+                            <script src="../js/lowcarb_snidane.js"></script>
+                            <script src="../js/lowcarb_vecere.js"></script>
+                        
+                            <script>
+                                // Inicializace globální proměnné
+                                window.allRecipes = window.allRecipes || [];
+                        
+                                // Načtení všech receptů z jednotlivých souborů
+                                const recipeCategories = ['maso', 'nemaso', 'cukrovi', 'dezerty', 'napoje', 'polevky', 'speciality', 'vecere', 'zavarovani', 'lowcarb_vecere', 'lowcarb_snidane', 'lowcarb_obed'];
+                        
+                                // Spočítání receptů
+                                let totalRecipes = 0;
+                                recipeCategories.forEach(category => {
+                                    if (window[category] && Array.isArray(window[category])) {
+                                        totalRecipes += window[category].length;
+                                    }
+                                });
+                        
+                                // Aktualizace počtu receptů v HTML
+                                document.getElementById('recipe-count').innerText = totalRecipes;
+                            </script>
                         </div>
                     </div>
                 </div>

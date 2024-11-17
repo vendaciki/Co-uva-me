@@ -1,4 +1,15 @@
-﻿
+﻿window.lowcarb_vecere = [
+  
+  
+  
+  
+  
+  
+  
+  
+];
+
+
 function vypisJidloARecept() {
     document.getElementById("hodnoty").style.display = "none";       // skryje obsah tabulky s receptem
     document.getElementById("reset").style.display = "none";       // skryje tlačítko - reset jídla
@@ -61,14 +72,5 @@ document.onclick = function(e){
 }
   
   
-const lowcarb_vecere = [
-  
-  
-  
-  
-  
-  
-  
-  
-];
+
   

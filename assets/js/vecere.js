@@ -1,4 +1,6 @@
-﻿const vecere = [
+﻿window.vecere = [
+
+    
     {nazev: "Bramboráky", ingredience: "<b><u>Ingredience:</u></b><br><br>- brambory<br>- točený salám<br>- vajíčko<br>- česnek<br>- hl. mouka<br>- sůl<br>- pepř<br>- majoránka<br>- olej", postup: "<b><u>Postup přípravy:</b></u><br><br>Syrové brambory nastrouháme nahrubo, salám nakrájíme nebo též můžeme nastrouhat, přidáme potřebné suroviny, aby vzniklo husté těstíčko.<br>Na pánvičku s olejem pomocí naběračky vkládáme těstíčko a děláme placičky. Smažíme do zlatova.", obrazek: "<img src='../../img/vecere/Bramboraky.webp'>" },
     {nazev: "Budapešťská pomazánka", ingredience: "<b><u>Ingredience:</u></b><br><br>- 1 cibule <br>- 1/2 červené kapie <br>- 250 g polotučného tvarohu <br>- paprika sladká <br>- sůl <br>- pepř", postup: "<b><u>Postup přípravy:</b></u><br><br>Nakrájíme cibuli a papriku na drobné kostičky (nebo do mixéru).<br>Přidáme tvaroh, sladkou papriku a dochutíme solí a pepřem.", obrazek: "<img src='../../img/vecere/Budapestska-Pomazanka.webp'>" },
     {nazev: "Bulka s hermelínem a brusinky", ingredience: "<b><u>Ingredience:</u></b><br><br>- houska<br>- hermelín<br>- měkký salám<br>- brusinky<br>- máslo", postup: "<b><u>Postup přípravy:</b></u><br><br>Housku rozpůlíme, pomažeme z obou stran máslem.<br>Na spodní díl položíme plátek salámu, na něj půlku hermelínu, brusinky a další plátek salámu.<br>Přiložíme horní díl housky a dáme na chvíli do mikrovlnky rozehřát, aby hermelín tekl.", obrazek: "<img src='../../img/vecere/Bulka-s-hermelinem.webp'>" },
